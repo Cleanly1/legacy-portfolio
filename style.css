@@ -20,10 +20,11 @@ h1 {
   color:white;
   text-align: center;
   }
+/* I think this code might be redundant and right now not needed */
 h2 {
-    /* animation-name: colorT; */
+    /* animation-name: colorT;
     animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 1s; */
     color:white;
     text-align: center;
   }
@@ -57,20 +58,20 @@ li img {display: flex;
     }
 
 
-/* Adds the rainbow effects colors */
+/* Adds the rainbow effects to the body */
   @keyframes backg {
-    0%   {background-color: #FFF2F2;}
-    5%   {background-color: #FED9D6;}
-    10%   {background-color: #FDC3BB;}
-    15%   {background-color: #FCB3A0;}
-    20%  {background-color: #FAAA86;}
-    25%  {background-color: #F7AB6D;}
-    30%   {background-color: #F5B557;}
-    35%   {background-color: #F1CB42;}
-    40%  {background-color: #EDEC30;}
-    45%  {background-color: #B8E921;}
-    50%  {background-color: #75E413;}
-    55%  {background-color: #26DE08;}
+    0%   {background-color: #FF0000;}
+    5%   {background-color: #FE0E00;}
+    10%   {background-color: #FD1F00;}
+    15%   {background-color: #FC3500;}
+    20%  {background-color: #FA4F00;}
+    25%  {background-color: #F76E00;}
+    30%   {background-color: #F59200;}
+    35%   {background-color: #F1BC00;}
+    40%  {background-color: #EDEC00;}
+    45%  {background-color: #B0E900;}
+    50%  {background-color: #6BE400;}
+    55%  {background-color: #1FDE00;}
     60%   {background-color: #00D732;}
     65%   {background-color: #00CF87;}
     70%   {background-color: #00B3C7;}
@@ -78,23 +79,23 @@ li img {display: flex;
     80% {background-color: #0D00B3;}
     85% {background-color: #6000A9;}
     90% {background-color: #9E0094;}
-    100% {background-color: #FFF2F2;}
+    100% {background-color: #FF0000;}
 
   }
-
+/* Adds the rainbow effect for the h1 and h2 tag */
 @keyframes colorT {
-  100%    {color:#FFF2F2;}
-  95%    {color:#FED9D6;}
-  90%   {color:#FDC3BB;}
-  85%   {color:#FCB3A0;}
-  80%   {color:#FAAA86;}
-  75%   {color:#F7AB6D;}
-  70%   {color:#F5B557;}
-  65%   {color:#F1CB42;}
-  60%   {color:#EDEC30;}
-  55%   {color:#B8E921;}
-  50%   {color:#75E413;}
-  45%   {color:#26DE08;}
+  100%    {color:#FF0000;}
+  95%    {color:#FE0E00;}
+  90%   {color:#FD1F00;}
+  85%   {color:#FC3500;}
+  80%   {color:#FA4F00;}
+  75%   {color:#F76E00;}
+  70%   {color:#F59200;}
+  65%   {color:#F1BC00;}
+  60%   {color:#EDEC00;}
+  55%   {color:#B0E900;}
+  50%   {color:#6BE400;}
+  45%   {color:#1FDE00;}
   40%   {color:#00D732;}
   35%   {color:#00CF87;}
   30%   {color:#00B3C7;}
@@ -102,9 +103,21 @@ li img {display: flex;
   20%   {color:#0D00B3;}
   15%   {color:#6000A9;}
   10%   {color:#9E0094;}
-  0%  {color:#FFF2F2;}
+  0%  {color:#FF0000;}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* @media screen and (max-width:800px)
 {
