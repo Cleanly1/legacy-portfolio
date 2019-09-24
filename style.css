@@ -6,6 +6,7 @@ body {display: flex;
   animation-iteration-count: infinite;
   animation-duration: 2s;
   }
+  video {display: none;}
 
 .face{
   width:200px;
