@@ -5,15 +5,12 @@ body {display: flex;
   animation-name: backg;
   animation-iteration-count: infinite;
   animation-duration: 2s;
-}
-@media screen and (max-width:600px)
-{
-  body{
-    animation-duration: 0.5s;
+  animation-direction: alternate;
   }
 
 
-}
+
+
 @keyframes backg {
   0%   {background-color: #FFF2F2;}
   5%   {background-color: #FED9D6;}
@@ -42,10 +39,14 @@ img{
 }
 h1 {animation-name: colorT;
   animation-iteration-count: infinite;
-  animation-duration: 1s;}
+  animation-duration: 1s;
+  text-align: center;
+  }
 h2 {animation-name: colorT;
     animation-iteration-count: infinite;
-    animation-duration: 1s;}
+    animation-duration: 1s;
+    text-align: center;
+  }
 
 @keyframes colorT {
   100%    {color:#FFF2F2;}
@@ -68,5 +69,24 @@ h2 {animation-name: colorT;
   15%   {color:#6000A9;}
   10%   {color:#9E0094;}
   0%  {color:#FFF2F2;}
+
+}
+@media screen and (max-width:800px)
+{
+  h1 {
+    color:black;
+    animation-name:none;
+  }
+  body{
+    animation-duration: 1s;
+    }
+}
+
+
+@media screen and (max-width:700px)
+{
+  body{
+    animation-duration: 0.5s;
+    }
 
 }
