@@ -1,3 +1,24 @@
+body {
+  background-color: aqua;
+  animation-name: backg;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes backg {
+  0%   {background-color: #FFF2F2;}
+  10%   {background-color: #FDC3BB;}
+  20%  {background-color: #FAAA86;}
+  30%   {background-color: #F5B557;}
+  40%  {background-color: #EDEC30;}
+  50%  {background-color: #75E413;}
+  60%   {background-color: #00D732;}
+  70%   {background-color: #00B3C7;}
+  80% {background-color: #0D00B3;}
+  90% {background-color: #6000A9;}
+  100% {background-color: #920044;}
+  100%   {background-color: #FFF2F2;}
+}
 img{
   width:200px;
 }
