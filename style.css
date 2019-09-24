@@ -7,7 +7,7 @@ body {display: flex;
   animation-duration: 2s;
   }
 
-img{
+.face{
   width:200px;
   margin: 0 100px;
   }
@@ -23,13 +23,29 @@ h2 {animation-name: colorT;
   }
 
 .social {display: flex;
-flex-flow: row wrap;}
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.social ul {display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  padding: 0;
+
+}
 
 li {display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style: none;
-  width: 100px;
+  margin:0;
   }
+li a {width: 100px;}
+
 li img {display: flex;
     width: 100px;
     }
