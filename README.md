@@ -6,7 +6,7 @@ The assignment was to make your own portfolio/site so people could see who you a
 # What I did
 I made a simple site that i'm going to change in the future.
 I wanted to test out some css code like:
-´´´
+```
 @keyframes backg {
   0%   {background-color: #FFF2F2;}
   5%   {background-color: #FED9D6;}
