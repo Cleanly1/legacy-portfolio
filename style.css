@@ -4,7 +4,7 @@ body {display: flex;
   flex-flow: column wrap;
   animation-name: backg;
   animation-iteration-count: infinite;
-  animation-duration: 2s;
+  animation-duration: 1s;
   }
   video {display: none;}
 
