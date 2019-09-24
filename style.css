@@ -2,9 +2,10 @@ body {display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: column wrap;
-  animation-name: backg;
+  /* animation-name: backg;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 0.5s; */
+  background-color: lightgrey;
   }
   video {display: none;}
 
@@ -12,14 +13,18 @@ body {display: flex;
   width:200px;
   margin: 0 100px;
   }
-h1 {animation-name: colorT;
+h1 {
+  /* animation-name: colorT;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 1s; */
+  color:white;
   text-align: center;
   }
-h2 {animation-name: colorT;
+h2 {
+    /* animation-name: colorT; */
     animation-iteration-count: infinite;
     animation-duration: 1s;
+    color:white;
     text-align: center;
   }
 
@@ -100,14 +105,14 @@ li img {display: flex;
   0%  {color:#FFF2F2;}
 
 }
-@media screen and (max-width:800px)
+
+/* @media screen and (max-width:800px)
 {
   h1 {
-    color:black;
-    animation-name:none;
+    animation: colorT 1s infinite;
   }
   body{
-    animation-duration: 1s;
+    animation: backg 1s infinite;
     }
 }
 
@@ -118,4 +123,4 @@ li img {display: flex;
     animation-duration: 0.5s;
     }
 
-}
+} */

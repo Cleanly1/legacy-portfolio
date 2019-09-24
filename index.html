@@ -6,15 +6,16 @@
     <title>Cleanly1</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div>
-  <h1>Oskar Turesson</h1>
-  <h2>(Nick:Cleanly1)</h2>
+  <body id="body">
+  <div>
+  <h1 id="name">Oskar Turesson</h1>
+  <h2 id="nick">(Nick:Cleanly1)</h2>
 
   <img class="face" src="myface.jpg" alt="My face">
 
-  <video width="320" height="240" autoplay loop>
+  <video id="player" width="320" height="240" loop>
   <source src="videoplayback.mp4" type="video/mp4">
+
 </video>
 </div>
   <div class="social">
@@ -23,5 +24,18 @@
       <li><a href="https://www.instagram.com/oturesson/" target="_blank"><img src="insta.png" alt="facebook"></a></li>
     </ul>
   </div>
+  <button onclick="hej()">Click to start the madness</button>
+
+  <script>
+
+  function hej() {
+    var video = document.getElementById('player');
+    document.body.style.animation = "backg 1s infinite";
+    document.getElementById('name').style.animation = "colorT 1s infinite";
+    document.getElementById('nick').style.animation = "colorT 1s infinite";
+    video.play();
+  };
+
+</script>
   </body>
 </html>
