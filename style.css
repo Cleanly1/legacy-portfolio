@@ -1,24 +1,72 @@
-body {
-  background-color: aqua;
+body {display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: column wrap;
   animation-name: backg;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
+@media screen and (max-width:600px)
+{
+  body{
+    animation-duration: 0.5s;
+  }
 
+
+}
 @keyframes backg {
   0%   {background-color: #FFF2F2;}
+  5%   {background-color: #FED9D6;}
   10%   {background-color: #FDC3BB;}
+  15%   {background-color: #FCB3A0;}
   20%  {background-color: #FAAA86;}
+  25%  {background-color: #F7AB6D;}
   30%   {background-color: #F5B557;}
+  35%   {background-color: #F1CB42;}
   40%  {background-color: #EDEC30;}
+  45%  {background-color: #B8E921;}
   50%  {background-color: #75E413;}
+  55%  {background-color: #26DE08;}
   60%   {background-color: #00D732;}
+  65%   {background-color: #00CF87;}
   70%   {background-color: #00B3C7;}
+  75%   {background-color: #0050BD;}
   80% {background-color: #0D00B3;}
-  90% {background-color: #6000A9;}
-  100% {background-color: #920044;}
-  100%   {background-color: #FFF2F2;}
+  85% {background-color: #6000A9;}
+  90% {background-color: #9E0094;}
+  100% {background-color: #FFF2F2;}
+
 }
 img{
   width:200px;
+}
+h1 {animation-name: colorT;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;}
+h2 {animation-name: colorT;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;}
+
+@keyframes colorT {
+  100%    {color:#FFF2F2;}
+  95%    {color:#FED9D6;}
+  90%   {color:#FDC3BB;}
+  85%   {color:#FCB3A0;}
+  80%   {color:#FAAA86;}
+  75%   {color:#F7AB6D;}
+  70%   {color:#F5B557;}
+  65%   {color:#F1CB42;}
+  60%   {color:#EDEC30;}
+  55%   {color:#B8E921;}
+  50%   {color:#75E413;}
+  45%   {color:#26DE08;}
+  40%   {color:#00D732;}
+  35%   {color:#00CF87;}
+  30%   {color:#00B3C7;}
+  25%   {color:#0050BD;}
+  20%   {color:#0D00B3;}
+  15%   {color:#6000A9;}
+  10%   {color:#9E0094;}
+  0%  {color:#FFF2F2;}
+
 }
