@@ -9,6 +9,7 @@ body {display: flex;
 
 img{
   width:200px;
+  margin: 0 100px;
   }
 h1 {animation-name: colorT;
   animation-iteration-count: infinite;
@@ -20,6 +21,18 @@ h2 {animation-name: colorT;
     animation-duration: 1s;
     text-align: center;
   }
+
+.social {display: flex;
+flex-flow: row wrap;}
+
+li {display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100px;
+  }
+li img {display: flex;
+    width: 100px;
+    }
 
 
 /* Adds the rainbow effects colors */
