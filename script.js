@@ -8,8 +8,8 @@ function madness() {
   document.body.style.animation = "backg 1s infinite";
   document.getElementById('name').style.animation = "colorT 1s infinite";
   document.getElementById('nick').style.animation = "colorT 1s infinite";
-  social[0].style.animation = "rotateImage 0.5s infinite";
-  social[1].style.animation = "rotateImageReverse 0.5s infinite";
+  social[0].style.animation = "rotateImage 0.25s ease-in-out infinite";
+  social[1].style.animation = "rotateImageReverse 0.25s ease-in-out infinite";
   video.play();
 
 };
