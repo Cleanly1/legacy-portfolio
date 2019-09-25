@@ -1,10 +1,13 @@
-body {display: flex;
+body {
+  display: flex;
   justify-content: center;
   align-items:center;
   flex-flow: column wrap;
   background-color: lightgrey;
   }
-  video {display: none;}
+  video {
+    display: none;
+  }
 
 .face{
   width:200px;
@@ -26,13 +29,15 @@ h2 {
     text-align: center;
   }
 
-.social {display: flex;
+.social {
+  display: flex;
   justify-content: center;
   align-items: flex-start;
 
 }
 
-.social ul {display: flex;
+.social ul {
+  display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
@@ -41,22 +46,34 @@ h2 {
 
 }
 
-li {display: flex;
+li {
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   list-style: none;
   margin:0;
   }
-li #socialLinks {width: 100px;}
+li #socialLinks {
+  width: 100px;
+}
 
-#socialLinks:hover {
+/* #socialLinks:hover {
 
-  }
+  } */
 
-li img {display: flex;
+li img {
+  display: flex;
     width: 100px;
     }
+
+#date {
+  position: fixed;
+  bottom: 0;
+  right:0;
+}
+
+
 @keyframes rotateImageReverse {
   100% {transform: rotate(360deg);}
 }
