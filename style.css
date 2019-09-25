@@ -1,10 +1,8 @@
 body {display: flex;
   justify-content: center;
   align-content: center;
+  align-items:center; 
   flex-flow: column wrap;
-  /* animation-name: backg;
-  animation-iteration-count: infinite;
-  animation-duration: 0.5s; */
   background-color: lightgrey;
   }
   video {display: none;}
@@ -51,12 +49,21 @@ li {display: flex;
   list-style: none;
   margin:0;
   }
-li a {width: 100px;}
+li #socialLinks {width: 100px;}
+
+#socialLinks:hover {
+
+  }
 
 li img {display: flex;
     width: 100px;
     }
-
+@keyframes rotateImageReverse {
+  100% {transform: rotate(360deg);}
+}
+@keyframes rotateImage {
+  100% {transform: rotate(-360deg);}
+}
 
 /* Adds the rainbow effects to the body */
   @keyframes backg {

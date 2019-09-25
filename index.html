@@ -6,7 +6,7 @@
     <title>Cleanly1</title>
     <link rel="stylesheet" href="style.css">
   </head>
-  <body id="body">
+  <body>
   <div>
   <h1 id="name">Oskar Turesson</h1>
   <h2 id="nick">(Nick:Cleanly1)</h2>
@@ -20,32 +20,36 @@
 </div>
   <div class="social">
     <ul>
-      <li><a href="https://www.facebook.com/oskar.thuresson" target="_blank"><img src="facebook.png" alt="facebook"></a></li>
-      <li><a href="https://www.instagram.com/oturesson/" target="_blank"><img src="insta.png" alt="facebook"></a></li>
+      <li><a class="socialLinks" href="https://www.facebook.com/oskar.thuresson" target="_blank"><img src="facebook.png" alt="facebook"></a></li>
+      <li><a class="socialLinks" href="https://www.instagram.com/oturesson/" target="_blank"><img src="insta.png" alt="facebook"></a></li>
     </ul>
+  </div>
+  <div>
+    <p>Epilepsy Warning!</p>
   </div>
   <button onclick="madness()">Click to start the madness</button>
   <button onclick="stopMadness()">Click to stop the madness</button>
 
   <script>
-
+  var video = document.getElementById('player');
+  var social = document.getElementsByClassName("socialLinks")
   function madness() {
-    var video = document.getElementById('player');
     document.body.style.animation = "backg 1s infinite";
     document.getElementById('name').style.animation = "colorT 1s infinite";
     document.getElementById('nick').style.animation = "colorT 1s infinite";
+    social[0].style.animation = "rotateImage 0.5s infinite";
+    social[1].style.animation = "rotateImageReverse 0.5s infinite";
     video.play();
   };
 
   function stopMadness() {
-    var video = document.getElementById('player');
+    video.pause();
     document.body.style.animation = "none";
     document.getElementById('name').style.animation = "none";
     document.getElementById('nick').style.animation = "none";
-    video.pause();
-
+    social[0].style.animation = "none";
+    social[1].style.animation = "none";
   }
-
 
 </script>
   </body>

@@ -31,3 +31,5 @@ I wanted to test out some css code like:
 
 }
 ```
+# What I intend to do
+I will continue to update this site with new things as I start to learn and understand more.
