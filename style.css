@@ -68,14 +68,15 @@ li img {
     }
 
 button {
-  width: 15%;
+  width: 200px;
   font-family: 'Roboto Mono', monospace;
 
 }
 
 #date {
   position: fixed;
-  bottom: -10px;
+  margin:0;
+  bottom: 10px;
   right:10px;
 }
 
