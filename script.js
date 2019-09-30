@@ -12,7 +12,7 @@ function madness() {
   social[0].style.animation = "rotateImage 0.25s ease-in-out infinite";
   social[1].style.animation = "rotateImageReverse 0.25s ease-in-out infinite";
   video.play();
-  
+
 };
 
 function stopMadness() {
