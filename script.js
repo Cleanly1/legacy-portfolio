@@ -9,8 +9,8 @@ function madness() {
   document.getElementById('name').style.animation = "colorT 1s infinite";
   document.getElementById('nick').style.animation = "colorT 1s infinite";
   document.getElementById('time').style.animation = "colorT 1s infinite";
-  social[0].style.animation = "rotateImage 0.25s ease-in-out infinite";
-  social[1].style.animation = "rotateImageReverse 0.25s ease-in-out infinite";
+  social[0].style.animation = "rotateImage 0.25s ease-in-out infinite alternate forwards";
+  social[1].style.animation = "rotateImageReverse 0.25s ease-in-out infinite alternate forwards";
   video.play();
 
 };
