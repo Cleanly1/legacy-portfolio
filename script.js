@@ -1,8 +1,6 @@
 var video = document.getElementById('player');
 var social = document.getElementsByClassName("socialLinks");
-var myVar = setInterval(theTime, 1000);
-mytimer();
-
+var myVar = setInterval(theTime, 1000); 
 
 function madness() {
   document.body.style.animation = "backg 1s infinite";
