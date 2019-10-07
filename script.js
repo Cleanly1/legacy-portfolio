@@ -9,8 +9,10 @@ function madness() {
   document.getElementById('name').style.animation = "colorT 1s infinite";
   document.getElementById('nick').style.animation = "colorT 1s infinite";
   document.getElementById('time').style.animation = "colorT 1s infinite";
-  social[0].style.animation = "rotateImage 0.25s ease-in-out infinite alternate forwards";
-  social[1].style.animation = "rotateImageReverse 0.25s ease-in-out infinite alternate forwards";
+  for (var i = 0; i < (social.length-1); i++) {
+    social[i].style.animation = "rotateImageReverse 0.25s ease-in-out infinite alternate forwards";
+  }
+  social[2].style.animation = "rotateImage 0.25s ease-in-out infinite alternate forwards";
   video.play();
 
 };
@@ -21,11 +23,12 @@ function stopMadness() {
   document.getElementById('name').style.animation = "none";
   document.getElementById('nick').style.animation = "none";
   document.getElementById('time').style.animation = "none";
-  social[0].style.animation = "none";
-  social[1].style.animation = "none";
+  for (var i = 0; i < social.length; i++) {
+    social[i].style.animation = "none";
+  }
 
 };
 
 function theTime() {
-var time = new Date();
-document.getElementById("time").innerHTML = time.toLocaleTimeString(); };
+  var time = new Date();
+  document.getElementById("time").innerHTML = time.toLocaleTimeString(); };
