@@ -47,7 +47,7 @@ h2 {
 
 }
 .social li:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(360deg);
 }
 
 .social ul {
