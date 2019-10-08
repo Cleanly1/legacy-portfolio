@@ -23,6 +23,7 @@ video {
   margin: 0 100px;
   border: 5px solid #292929;
   border-radius: 100px;
+  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 h1 {
   /* animation-name: colorT;
