@@ -10,19 +10,31 @@
 
 </head>
 <body>
-  <div>
-    <img class="logo" src="logo.gif" alt="My logo">
+
+
+    <img class="logo" src="logo.gif" alt=">Logo">
+    <!-- <img class="backSide" src="finallogo.png" alt="Logo with name"> -->
     <h1 id="name">Oskar Turesson</h1>
     <h2 id="nick">Nick:Cleanly1</h2>
 
-    <img class="face" src="myface2.jpg" alt="My face">
-
-    <video id="player" width="320" height="240" loop>
-      <source src="videoplayback.mp4" type="video/mp4">
-
-      </video>
-
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-face">
+          <img class="face" src="myface2.jpg" alt="My face">
+        </div>
+        <div class="flip-box-secret">
+          <h2>Secret</h2>
+          <p>This is going to be amazing</p>
+        </div>
+      </div>
     </div>
+    <!-- <img class="face" src="myface2.jpg" alt="My face"> -->
+
+  <video id="player" width="320" height="240" loop>
+    <source src="videoplayback.mp4" type="video/mp4">
+
+    </video>
+
     <div class="social">
       <ul>
         <li><a class="socialLinks" href="https://www.facebook.com/oskar.thuresson" target="_blank"><img src="facebook.png" alt="facebook"></a></li>
@@ -37,6 +49,7 @@
     <button onclick="stopMadness()">Click to stop the madness</button>
 
     <p id="time"></p>
+
     <script src="script.js">
 
     </script>
