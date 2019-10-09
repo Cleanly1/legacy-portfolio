@@ -1,32 +1,34 @@
 body {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   flex-flow: column wrap;
-  margin:0;
-  color:whitesmoke;
+  margin: 0;
+  color: whitesmoke;
   background-color: #292929;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23ffffff' fill-opacity='0.19' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
   font-family: 'Roboto Mono', monospace;
 }
+
 video {
   display: none;
 }
-.logo  {
+
+.logo {
   position: absolute;
   height: 80px;
-  top:5px;
-  left:5px;
+  top: 5px;
+  left: 5px;
   animation-duration: 2s;
+  animation-delay: 0.5s;
   animation-direction: alternate;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.logo:hover {
+  .logo:hover {
   animation-name: rotateLogo;
-
-}
+  }
 .face {
   width: 200px;
   border: 5px solid #292929;
@@ -40,21 +42,19 @@ video {
   height: 210px;
   border-radius: 100px;
   margin-left: 0px;
+  }
 
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
+  .flip-box-inner {
   width: 100%;
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-}
+  }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
+  .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
+  transition-delay: 2s;
 }
 
 /* Position the front and back side */
@@ -64,29 +64,22 @@ video {
   height: 100%;
   backface-visibility: hidden;
 }
-
-
-/* Style the secret side */
-.flip-box-secret {
-  color: white;
-  border-radius: 100px;
-  box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
-  transform: rotateY(180deg);
-}
+  /* Style the secret side */
+  .flip-box-secret {
+    color: white;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    transform: rotateY(180deg);
+  }
 
 h1 {
-  /* animation-name: colorT;
-  animation-iteration-count: infinite;
-  animation-duration: 1s; */
-  color:white;
+  color: white;
   text-align: center;
 }
+
 /* I think this code might be redundant and right now not needed */
 h2 {
-  /* animation-name: colorT;
-  animation-iteration-count: infinite;
-  animation-duration: 1s; */
-  color:white;
+  color: white;
   text-align: center;
 }
 
@@ -95,43 +88,37 @@ h2 {
   justify-content: center;
   align-items: flex-start;
 
-}
-.social li:hover {
-  transform: scale(1.2) rotate(360deg);
-}
+  }
+  .social li:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
 
-.social ul {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-  padding: 0;
+  .social ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+  }
 
-}
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    cursor: pointer;
+    transition: 400ms ease;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+  }
 
-li {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin:0;
-  cursor: pointer;
-  transition: 400ms ease;
-  width: 70px;
-  height: 70px;
-  overflow: hidden;
-}
-li:not(:first-child) {
-  margin-left: 15px;
-}
-/* li #socialLinks {
-width: 80px;
-}
-#socialLinks:hover {
-
-} */
+  li:not(:first-child) {
+    margin-left: 15px;
+  }
 
 li img {
   display: flex;
@@ -139,8 +126,7 @@ li img {
 }
 
 button {
-
-  font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
   font-size: 60%;
   border: 3px solid #292929;
   background-color: whitesmoke;
@@ -149,18 +135,17 @@ button {
   cursor: pointer;
   transition: 400ms ease;
 }
+
 button:hover {
   transform: scale(1.2);
 }
 
 #time {
   position: fixed;
-  margin:0;
-  bottom:10px;
-  right:10px;
+  margin: 0;
+  bottom: 10px;
+  right: 10px;
 }
-
-
 
 @media screen and (max-width: 500px) {
   .logo {
@@ -170,60 +155,184 @@ button:hover {
 
 @keyframes rotateLogo {
   75%, 100% {
-    transform: rotateY(360deg);}
+    transform: rotateY(360deg);
   }
-  @keyframes rotateImageReverse {
-    100% {transform: rotate(360deg);}
+}
+
+@keyframes rotateImageReverse {
+  100% {
+    transform: rotate(360deg);
   }
-  @keyframes rotateImage {
-    100% {transform: rotate(-360deg);}
+}
+
+@keyframes rotateImage {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* Adds the rainbow effects to the body */
+@keyframes backg {
+  0% {
+    background-color: #FF0000;
   }
 
-  /* Adds the rainbow effects to the body */
-  @keyframes backg {
-    0%   {background-color: #FF0000;}
-    5%   {background-color: #FE0E00;}
-    10%   {background-color: #FD1F00;}
-    15%   {background-color: #FC3500;}
-    20%  {background-color: #FA4F00;}
-    25%  {background-color: #F76E00;}
-    30%   {background-color: #F59200;}
-    35%   {background-color: #F1BC00;}
-    40%  {background-color: #EDEC00;}
-    45%  {background-color: #B0E900;}
-    50%  {background-color: #6BE400;}
-    55%  {background-color: #1FDE00;}
-    60%   {background-color: #00D732;}
-    65%   {background-color: #00CF87;}
-    70%   {background-color: #00B3C7;}
-    75%   {background-color: #0050BD;}
-    80% {background-color: #0D00B3;}
-    85% {background-color: #6000A9;}
-    90% {background-color: #9E0094;}
-    100% {background-color: #FF0000;}
-
+  5% {
+    background-color: #FE0E00;
   }
-  /* Adds the rainbow effect for the h1 and h2 tag */
-  @keyframes colorT {
-    100%    {color:#FF0000;}
-    95%    {color:#FE0E00;}
-    90%   {color:#FD1F00;}
-    85%   {color:#FC3500;}
-    80%   {color:#FA4F00;}
-    75%   {color:#F76E00;}
-    70%   {color:#F59200;}
-    65%   {color:#F1BC00;}
-    60%   {color:#EDEC00;}
-    55%   {color:#B0E900;}
-    50%   {color:#6BE400;}
-    45%   {color:#1FDE00;}
-    40%   {color:#00D732;}
-    35%   {color:#00CF87;}
-    30%   {color:#00B3C7;}
-    25%   {color:#0050BD;}
-    20%   {color:#0D00B3;}
-    15%   {color:#6000A9;}
-    10%   {color:#9E0094;}
-    0%  {color:#FF0000;}
 
+  10% {
+    background-color: #FD1F00;
   }
+
+  15% {
+    background-color: #FC3500;
+  }
+
+  20% {
+    background-color: #FA4F00;
+  }
+
+  25% {
+    background-color: #F76E00;
+  }
+
+  30% {
+    background-color: #F59200;
+  }
+
+  35% {
+    background-color: #F1BC00;
+  }
+
+  40% {
+    background-color: #EDEC00;
+  }
+
+  45% {
+    background-color: #B0E900;
+  }
+
+  50% {
+    background-color: #6BE400;
+  }
+
+  55% {
+    background-color: #1FDE00;
+  }
+
+  60% {
+    background-color: #00D732;
+  }
+
+  65% {
+    background-color: #00CF87;
+  }
+
+  70% {
+    background-color: #00B3C7;
+  }
+
+  75% {
+    background-color: #0050BD;
+  }
+
+  80% {
+    background-color: #0D00B3;
+  }
+
+  85% {
+    background-color: #6000A9;
+  }
+
+  90% {
+    background-color: #9E0094;
+  }
+
+  100% {
+    background-color: #FF0000;
+  }
+}
+
+/* Adds the rainbow effect for the h1 and h2 tag */
+@keyframes colorT {
+  100% {
+    color: #FF0000;
+  }
+
+  95% {
+    color: #FE0E00;
+  }
+
+  90% {
+    color: #FD1F00;
+  }
+
+  85% {
+    color: #FC3500;
+  }
+
+  80% {
+    color: #FA4F00;
+  }
+
+  75% {
+    color: #F76E00;
+  }
+
+  70% {
+    color: #F59200;
+  }
+
+  65% {
+    color: #F1BC00;
+  }
+
+  60% {
+    color: #EDEC00;
+  }
+
+  55% {
+    color: #B0E900;
+  }
+
+  50% {
+    color: #6BE400;
+  }
+
+  45% {
+    color: #1FDE00;
+  }
+
+  40% {
+    color: #00D732;
+  }
+
+  35% {
+    color: #00CF87;
+  }
+
+  30% {
+    color: #00B3C7;
+  }
+
+  25% {
+    color: #0050BD;
+  }
+
+  20% {
+    color: #0D00B3;
+  }
+
+  15% {
+    color: #6000A9;
+  }
+
+  10% {
+    color: #9E0094;
+  }
+
+  0% {
+    color: #FF0000;
+  }
+}
