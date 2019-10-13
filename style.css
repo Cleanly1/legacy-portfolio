@@ -32,7 +32,7 @@ video {
 .face {
   width: 200px;
   border: 5px solid #292929;
-  border-radius: 100px;
+  border-radius: 110px;
   box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
   margin-left: 0px;
 }
@@ -40,7 +40,7 @@ video {
   background-color: transparent;
   width: 210px;
   height: 210px;
-  border-radius: 100px;
+  border-radius: 110px;
   margin-left: 0px;
   }
 
@@ -67,7 +67,7 @@ video {
   /* Style the secret side */
   .flip-box-secret {
     color: white;
-    border-radius: 100px;
+    border-radius: 110px;
     box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
     transform: rotateY(180deg);
   }
