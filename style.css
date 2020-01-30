@@ -204,7 +204,7 @@ button:hover {
     right: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 520px) {
     .logo {
         height: 60px;
     }
