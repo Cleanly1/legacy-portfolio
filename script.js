@@ -46,3 +46,12 @@ function theTime() {
     var time = new Date();
     document.getElementById("time").innerHTML = time.toLocaleTimeString();
 }
+
+const madnessButtons = document.querySelectorAll(".madness");
+
+madnessButtons[0].addEventListener("click", function() {
+    madness();
+});
+madnessButtons[1].addEventListener("click", function() {
+    stopMadness();
+});

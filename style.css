@@ -152,7 +152,7 @@ button:hover {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 60vw;
 }
 
 .project {
@@ -160,8 +160,8 @@ button:hover {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 80vw;
-    height: 40vh;
+    width: 100%;
+    padding: 2.5vh 2.5vw;
     margin: 2.5vh 2.5vw;
     background-color: rgba(0, 0, 0, 0.5);
     transition-duration: 1s;
@@ -181,6 +181,7 @@ button:hover {
     height: 35vh;
     border: 2px solid white;
     transition-duration: 1s;
+    cursor: pointer;
 }
 
 .linkHover {
@@ -215,10 +216,6 @@ button:hover {
         justify-content: space-evenly;
         align-items: center;
         width: 95vw;
-        height: 40vh;
-        margin: 2.5vh 2.5vw;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition-duration: 1s;
     }
 
     .projectTitle {
@@ -228,12 +225,10 @@ button:hover {
     }
 
     .projectLink {
-        height: 30vw;
-        border: 2px solid white;
-        transition-duration: 1s;
+        height: 35vw;
     }
     .projectImg {
-        height: 30vw;
+        height: 35vw;
     }
 
     .projectHover {
