@@ -2,6 +2,7 @@ var video = document.getElementById("player");
 var social = document.getElementsByClassName("socialLinks");
 var myVar = setInterval(theTime, 1000);
 
+window.navigator.vibrate(2000);
 const projects = document.querySelectorAll(".project");
 
 projects.forEach(function(project) {
