@@ -209,13 +209,17 @@ button:hover {
     .logo {
         height: 60px;
     }
-
-    .project {
+    .projects {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-evenly;
         align-items: center;
-        width: 95vw;
+        width: 80vw;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        flex-flow: column nowrap;
     }
 
     .projectTitle {
