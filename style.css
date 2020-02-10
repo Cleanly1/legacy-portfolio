@@ -174,11 +174,12 @@ button:hover {
 .projectTitle {
     align-self: flex-start;
     margin: auto 40px;
-    width: 20vw;
+    width: 25vw;
+    font-size: 3vw;
 }
 
 .projectLink {
-    height: 35vh;
+    height: 15vw;
     border: 2px solid white;
     transition-duration: 1s;
     cursor: pointer;
@@ -195,7 +196,7 @@ button:hover {
 }
 
 .projectImg {
-    height: 35vh;
+    height: 15vw;
 }
 
 #time {
@@ -226,6 +227,7 @@ button:hover {
         align-self: center;
         margin: 10px auto;
         width: auto;
+        font-size: 5vh;
     }
 
     .projectLink {

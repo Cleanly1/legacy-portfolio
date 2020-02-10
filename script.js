@@ -1,6 +1,5 @@
 var video = document.getElementById("player");
 var social = document.getElementsByClassName("socialLinks");
-var myVar = setInterval(theTime, 1000);
 
 const projects = document.querySelectorAll(".project");
 
@@ -17,7 +16,7 @@ projects.forEach(function(project) {
     });
 });
 
-function madness() {
+const madness = function() {
     document.body.style.animation = "backg 1s infinite";
     document.getElementById("name").style.animation = "colorT 1s infinite";
     document.getElementById("nick").style.animation = "colorT 1s infinite";
@@ -29,9 +28,9 @@ function madness() {
     social[2].style.animation =
         "rotateImage 0.25s ease-in-out infinite alternate forwards";
     video.play();
-}
+};
 
-function stopMadness() {
+const stopMadness = function() {
     video.pause();
     document.body.style.animation = "none";
     document.getElementById("name").style.animation = "none";
@@ -40,12 +39,12 @@ function stopMadness() {
     for (var i = 0; i < social.length; i++) {
         social[i].style.animation = "none";
     }
-}
+};
 
-function theTime() {
+const theTime = function() {
     var time = new Date();
     document.getElementById("time").innerHTML = time.toLocaleTimeString();
-}
+};
 
 const madnessButtons = document.querySelectorAll(".madness");
 
@@ -55,3 +54,5 @@ madnessButtons[0].addEventListener("click", function() {
 madnessButtons[1].addEventListener("click", function() {
     stopMadness();
 });
+
+var myVar = setInterval(theTime, 1000);
