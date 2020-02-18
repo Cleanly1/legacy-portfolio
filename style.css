@@ -150,9 +150,10 @@ button:hover {
 .projects {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 60vw;
+    height: 90vh;
 }
 
 .project {
@@ -216,6 +217,7 @@ button:hover {
         justify-content: space-evenly;
         align-items: center;
         width: 80vw;
+        height: auto;
         margin-bottom: 20px;
     }
 

@@ -1,16 +1,15 @@
-var video = document.getElementById("player");
-var social = document.getElementsByClassName("socialLinks");
+var video = document.querySelector("#player");
+var social = document.querySelectorAll(".socialLinks");
 
 const projects = document.querySelectorAll(".project");
 
 projects.forEach(function(project) {
     const projectLink = project.querySelector(".projectLink");
-    project.addEventListener("mouseover", function(event) {
+    project.addEventListener("mouseover", function() {
         projectLink.classList.add("linkHover");
         project.classList.add("projectHover");
-        console.log(event);
     });
-    project.addEventListener("mouseout", function(event) {
+    project.addEventListener("mouseout", function() {
         projectLink.classList.remove("linkHover");
         project.classList.remove("projectHover");
     });
@@ -18,9 +17,9 @@ projects.forEach(function(project) {
 
 const madness = function() {
     document.body.style.animation = "backg 1s infinite";
-    document.getElementById("name").style.animation = "colorT 1s infinite";
-    document.getElementById("nick").style.animation = "colorT 1s infinite";
-    document.getElementById("time").style.animation = "colorT 1s infinite";
+    document.querySelector("#name").style.animation = "colorT 1s infinite";
+    document.querySelector("#nick").style.animation = "colorT 1s infinite";
+    document.querySelector("#time").style.animation = "colorT 1s infinite";
     for (var i = 0; i < social.length - 1; i++) {
         social[i].style.animation =
             "rotateImageReverse 0.25s ease-in-out infinite alternate forwards";
@@ -33,9 +32,9 @@ const madness = function() {
 const stopMadness = function() {
     video.pause();
     document.body.style.animation = "none";
-    document.getElementById("name").style.animation = "none";
-    document.getElementById("nick").style.animation = "none";
-    document.getElementById("time").style.animation = "none";
+    document.querySelector("#name").style.animation = "none";
+    document.querySelector("#nick").style.animation = "none";
+    document.querySelector("#time").style.animation = "none";
     for (var i = 0; i < social.length; i++) {
         social[i].style.animation = "none";
     }
@@ -43,7 +42,7 @@ const stopMadness = function() {
 
 const theTime = function() {
     var time = new Date();
-    document.getElementById("time").innerHTML = time.toLocaleTimeString();
+    document.querySelector("#time").innerHTML = time.toLocaleTimeString();
 };
 
 const madnessButtons = document.querySelectorAll(".madness");
