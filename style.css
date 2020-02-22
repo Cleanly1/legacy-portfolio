@@ -274,6 +274,13 @@ button:hover {
         height: 35vw;
     }
 
+    .projectDescription {
+        width: 70vw;
+        height: 2vh;
+        padding: 1.5vh 1.5vw;
+        transition-duration: 1s;
+    }
+
     .quote {
         display: flex;
         flex-flow: column nowrap;
