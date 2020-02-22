@@ -154,12 +154,13 @@ button:hover {
     align-items: center;
     width: 60vw;
     height: 90vh;
+    margin: 5vh 2.5vw;
 }
 
 .project {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     padding: 2.5vh 2.5vw;
@@ -173,10 +174,9 @@ button:hover {
 }
 
 .projectTitle {
-    align-self: flex-start;
-    margin: auto 40px;
     width: 25vw;
     font-size: 3vw;
+    transition-duration: 1s;
 }
 
 .projectLink {
@@ -190,7 +190,7 @@ button:hover {
     border: 2px solid black;
 }
 
-.projectHover {
+.projectActive {
     background-color: rgba(0, 0, 0, 0.9);
     box-shadow: 0px 5px 0 white;
     border-radius: 10px;
@@ -200,11 +200,46 @@ button:hover {
     height: 15vw;
 }
 
+.projectDescription {
+    display: none;
+    width: 25vw;
+    transition-duration: 1s;
+}
+
 #time {
     position: fixed;
     margin: 0;
     bottom: 10px;
     right: 10px;
+}
+
+.quote {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 60vw;
+    padding: 2.5vh 2.5vw;
+    margin: 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quoteText {
+    height: 17.5vh;
+    transition-duration: 1s;
+}
+
+.fade {
+    opacity: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: flex;
 }
 
 @media screen and (max-width: 520px) {
@@ -239,10 +274,26 @@ button:hover {
         height: 35vw;
     }
 
-    .projectHover {
-        background-color: rgba(0, 0, 0, 0.9);
-        box-shadow: 0px 5px 0 white;
-        border-radius: 10px;
+    .quote {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        align-items: center;
+        height: 40vh;
+        width: 80vw;
+        padding: 2.5vh 2.5vw;
+        margin: 10vh 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .quoteTitle {
+        font-size: 3vh;
+    }
+
+    .quoteText {
+        height: 20vh;
+        font-size: 2.5vh;
+        transition-duration: 1s;
     }
 
     .linkHover {
