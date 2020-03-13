@@ -77,8 +77,6 @@ madnessButtons[1].addEventListener("click", function() {
     stopMadness();
 });
 
-var myVar = setInterval(theTime, 1000);
-
 const getQuote = function() {
     fetch("https://api.kanye.rest")
         .then(function(response) {
@@ -98,3 +96,4 @@ const getQuote = function() {
 
 getQuote();
 setInterval(getQuote, interval * 1000);
+var myTime = setInterval(theTime, 1000);
