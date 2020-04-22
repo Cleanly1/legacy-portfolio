@@ -1,6 +1,7 @@
-# The Assignment
+# Hello!
 
-The assignment was to make your own portfolio/site so people could see who you are.
+Hello World!
+This is the github page for my personal page where you can see some of my projects and links to
 
 
 # What I did
